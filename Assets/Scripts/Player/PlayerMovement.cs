@@ -16,16 +16,14 @@ public class PlayerMovement : MonoBehaviour
 
     public float vel = 0f;
 
-   
-
     void Start()
-    {
-		controller = this.GetComponent<CharacterController> ();
+    {		    
+        controller = this.GetComponent<CharacterController> ();
     }
 
     void Update()
     {
-        groundedPlayer = controller.isGrounded;
+            groundedPlayer = controller.isGrounded;
         if (groundedPlayer && playerVelocity.y < 0)
         {
             playerVelocity.y = 0f;

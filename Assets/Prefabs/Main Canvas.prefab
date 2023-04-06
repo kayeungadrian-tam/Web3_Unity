@@ -254,7 +254,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8510961128169725771}
-  - component: {fileID: 3737516415964616719}
+  - component: {fileID: 2297788765459893675}
   m_Layer: 0
   m_Name: Interact UI
   m_TagString: Untagged
@@ -278,7 +278,7 @@ Transform:
   m_Father: {fileID: 7973166259244181742}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3737516415964616719
+--- !u!114 &2297788765459893675
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -287,7 +287,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6997666287825187926}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41bb5a9ccac305842b7d21d5d0a9d904, type: 3}
+  m_Script: {fileID: 11500000, guid: d8c0ec09a4d2255529154cfb83ba9064, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   InteractUI: {fileID: 2833086297465042694}

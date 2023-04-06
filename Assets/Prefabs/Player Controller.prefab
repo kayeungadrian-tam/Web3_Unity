@@ -3338,7 +3338,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1443148430771684839}
-  - component: {fileID: 4343598342353835797}
+  - component: {fileID: 8106543141604361304}
   m_Layer: 0
   m_Name: Player Ghost
   m_TagString: Untagged
@@ -3362,7 +3362,7 @@ Transform:
   m_Father: {fileID: 682760597463514139}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4343598342353835797
+--- !u!114 &8106543141604361304
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3371,9 +3371,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8976905592453068906}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fc1edb450ea945b7bb87d93923a9a73, type: 3}
+  m_Script: {fileID: 11500000, guid: 716173d20fe4726bda8615cb19f62cab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 4707728587468528752}
+  target: {fileID: 0}
   followDelay: 0
   followSpeed: 2
