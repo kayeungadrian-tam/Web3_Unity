@@ -45,7 +45,7 @@ public class Grid<TGridObject>
             for (int z = 0; z < gridArray.GetLength(1); z++)
             {
 
-                debugTextArray[x, z] = CreateWorldText(gridArray[x, z].ToString(), null, GetWorldPosition(x, z) + new Vector3(cellSize, 0, cellSize) * 0.5f, 20, TextAnchor.MiddleCenter);
+                debugTextArray[x, z] = CreateWorldText(gridArray[x, z].ToString(), null, GetWorldPosition(x, z) + new Vector3(cellSize, 0, cellSize) * 0.5f, 10, TextAnchor.MiddleCenter);
 
                 Debug.DrawLine(GetWorldPosition(x, z), GetWorldPosition(x, z + 1), Color.white, lineWidth);
                 Debug.DrawLine(GetWorldPosition(x, z), GetWorldPosition(x + 1, z), Color.white, lineWidth);
@@ -55,17 +55,20 @@ public class Grid<TGridObject>
         Debug.DrawLine(GetWorldPosition(0, height), GetWorldPosition(width, height), Color.white, lineWidth);
         Debug.DrawLine(GetWorldPosition(width, height), GetWorldPosition(width, height), Color.white, lineWidth);
 
+        OnGridObjectChanged += (object sender, OnGridObjectChangedEventArgs eventArgs) =>
+        {
+            debugTextArray[eventArgs.x, eventArgs.z].text = gridArray[eventArgs.x, eventArgs.z].ToString();
+        };
         // _SetValue(2, 1, 56);
     }
 
-    public static TextMesh CreateWorldText(string text, Transform parent = null, Vector3 localPosition = default(Vector3), int fontSize = 40, TextAnchor textAnchor = TextAnchor.MiddleCenter)
+    public static TextMesh CreateWorldText(string text, Transform parent = null, Vector3 localPosition = default(Vector3), int fontSize = 20, TextAnchor textAnchor = TextAnchor.MiddleCenter)
     {
         GameObject gameObject = new GameObject("World_text", typeof(TextMesh));
         Transform transform = gameObject.transform;
         transform.SetParent(parent, false);
         transform.localPosition = localPosition;
         TextMesh textMesh = gameObject.GetComponent<TextMesh>();
-        // textMesh.anchor
         textMesh.text = text;
         textMesh.fontSize = fontSize;
         return textMesh;
@@ -89,6 +92,11 @@ public class Grid<TGridObject>
             gridArray[x, z] = value;
             debugTextArray[x, z].text = gridArray[x, z].ToString();
         }
+    }
+
+    public float GetCellSize()
+    {
+        return cellSize;
     }
 
     public void TriggerGridObjectChanged(int x, int z)

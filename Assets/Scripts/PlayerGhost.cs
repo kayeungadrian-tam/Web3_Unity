@@ -19,6 +19,6 @@ public class PlayerGhost : MonoBehaviour
 
         // smoothly move towards the target position
         transform.position = Vector3.Lerp(transform.position, targetPos, followSpeed * Time.deltaTime);
-        transform.rotation = Quaternion.Slerp(transform.rotation, targetRot, followSpeed * Time.deltaTime);
+        transform.rotation = Quaternion.Slerp(transform.rotation,   targetRot, followSpeed * Time.deltaTime);
     }
 }
