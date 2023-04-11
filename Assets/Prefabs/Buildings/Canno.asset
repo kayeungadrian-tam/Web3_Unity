@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c2d3cf33d1129d4596dff1f7932e150, type: 3}
+  m_Name: Canno
+  m_EditorClassIdentifier: 
+  nameString: Canno
+  prefab: {fileID: 2612476889489434297, guid: d13278bf77fc285d394f7aab6d7de42b, type: 3}
+  visual: {fileID: 2612476889489434297, guid: aae2f9fad280d8858bd948c1cca9f1e4, type: 3}
+  width: 1
+  height: 1

@@ -9,8 +9,4 @@ public class ItemCollect : MonoBehaviour
     void Start()
     {
     }
-
-
-
-
 }
