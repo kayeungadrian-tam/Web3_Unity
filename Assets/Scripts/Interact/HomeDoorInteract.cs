@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class HomeDoorInteract : MonoBehaviour, IInteractable
 {
     public void Interact(Transform  interactorTransform){
-        SceneManager.LoadScene("Home");
+        // SceneManager.LoadScene("Home");
     }
 
     public string GetInteractText(){

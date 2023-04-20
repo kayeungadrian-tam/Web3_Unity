@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class WorldDoorInteract : MonoBehaviour, IInteractable
 {
     public void Interact(Transform  interactorTransform){
-        SceneManager.LoadScene("World");
+        // SceneManager.LoadScene("World");
     }
 
     public string GetInteractText(){

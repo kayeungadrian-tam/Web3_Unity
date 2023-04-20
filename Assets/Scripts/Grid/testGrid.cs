@@ -121,7 +121,10 @@ public class testGrid : MonoBehaviour
             placedObjectTypeSO = placedObjectTypeSOList[1];
             RefreshSelectedObjectType();
         }
-
+        if (Input.GetKeyDown(KeyCode.Alpha3)){
+            placedObjectTypeSO = placedObjectTypeSOList[2];
+            RefreshSelectedObjectType();
+        }
 
     }
 

@@ -17,7 +17,7 @@ public class PlayerWorldInterface : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (toHome && Input.GetKeyDown(KeyCode.F)) {SceneManager.LoadScene("Home");}   
+        // if (toHome && Input.GetKeyDown(KeyCode.F)) {SceneManager.LoadScene("Home");}   
     }
 
     private void OnTriggerEnter(Collider other){

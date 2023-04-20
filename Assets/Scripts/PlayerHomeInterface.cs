@@ -23,7 +23,7 @@ public class PlayerHomeInterface : MonoBehaviour
     void Update()
     {
         if (toWorld && Input.GetKeyDown(KeyCode.F)) { 
-            SceneManager.LoadScene("World");
+            // SceneManager.LoadScene("World");
         }
     }
 
